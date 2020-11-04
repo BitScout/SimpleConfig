@@ -1,0 +1,24 @@
+{
+    "name": "bitscout/simple-config",
+    "description": "A simple way to configure a few global variables in SonataAdmin",
+    "keywords": ["config"],
+    "type": "symfony-bundle",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Christian Kollross"
+        }
+    ],
+    "require": {
+        "php": "^7.2",
+        "symfony/config": "~3.3|~4.0",
+        "symfony/dependency-injection": "~3.4.10|^4.0.10",
+        "symfony/http-kernel":          "~3.3|~4.0"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "^9.4"
+    },
+    "autoload": {
+        "psr-4": { "Bitscout\\SimpleConfig\\": "src" }
+    }
+}
