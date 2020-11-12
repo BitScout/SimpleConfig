@@ -19,6 +19,6 @@
         "phpunit/phpunit": "^9.4"
     },
     "autoload": {
-        "psr-4": { "Bitscout\\SimpleConfig\\": "src" }
+        "psr-4": { "Bitscout\\SimpleConfig\\": "" }
     }
 }
