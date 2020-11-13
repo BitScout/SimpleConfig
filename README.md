@@ -23,6 +23,15 @@ bitscout_simple_config:
     foo:
       label: Fubar
       type: int
-      default: bar # optional, default null
+      default: bar
       show: true   # optional, default true
 ```
+
+This immediately will provide you with the environment variable `SIMPLE_CONFIG_FOO` 
+with the value `"bar"`.
+
+### Administration
+
+__TODO__
+
+Add Sonata admin (list/edit) to set a value in the database, load that value to replace the default.

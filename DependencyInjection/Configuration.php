@@ -21,7 +21,7 @@ class Configuration implements ConfigurationInterface
                         ->children()
                             ->scalarNode('label')->isRequired()->cannotBeEmpty()->end()
                             ->scalarNode('type')->isRequired()->cannotBeEmpty()->end()
-                            ->scalarNode(static::FIELD_DEFAULT)->defaultNull()->end()
+                            ->scalarNode(static::FIELD_DEFAULT)->cannotBeEmpty()->end()
                             ->booleanNode('show')->defaultTrue()->end()
                         ->end()
                     ->end()
