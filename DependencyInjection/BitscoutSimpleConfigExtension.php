@@ -20,5 +20,15 @@ class BitscoutSimpleConfigExtension extends Extension
 
         $loader = new XmlFileLoader($container, new FileLocator(__DIR__.'/../Resources/config'));
         $loader->load('services.xml');
+
+        $this->configureVarLoader($config, $container);
+    }
+
+    public function configureVarLoader(array $config, ContainerBuilder $container): void {
+        dump($config);
+
+        $container
+            ->findDefinition('bitscout_simple_config.dependency_injection.env_var_loader')
+            ->replaceArgument(0, $config['fields']);
     }
 }
