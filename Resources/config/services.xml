@@ -7,6 +7,7 @@
     <services>
 
         <service id="bitscout_simple_config.dependency_injection.env_var_loader" class="Bitscout\SimpleConfig\DependencyInjection\SimpleConfigEnvVarLoader" public="false">
+            <argument />
             <tag name="container.env_var_loader" />
         </service>
 
