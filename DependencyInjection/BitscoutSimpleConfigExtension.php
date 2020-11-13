@@ -25,8 +25,6 @@ class BitscoutSimpleConfigExtension extends Extension
     }
 
     public function configureVarLoader(array $config, ContainerBuilder $container): void {
-        dump($config);
-
         $container
             ->findDefinition('bitscout_simple_config.dependency_injection.env_var_loader')
             ->replaceArgument(0, $config['fields']);

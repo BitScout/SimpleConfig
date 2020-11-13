@@ -7,6 +7,8 @@ use Symfony\Component\Config\Definition\ConfigurationInterface;
 
 class Configuration implements ConfigurationInterface
 {
+    const FIELD_DEFAULT = 'default';
+
     public function getConfigTreeBuilder()
     {
         $treeBuilder = new TreeBuilder('bitscout_simple_config');
@@ -19,6 +21,7 @@ class Configuration implements ConfigurationInterface
                         ->children()
                             ->scalarNode('label')->isRequired()->cannotBeEmpty()->end()
                             ->scalarNode('type')->isRequired()->cannotBeEmpty()->end()
+                            ->scalarNode(static::FIELD_DEFAULT)->defaultNull()->end()
                             ->booleanNode('show')->defaultTrue()->end()
                         ->end()
                     ->end()

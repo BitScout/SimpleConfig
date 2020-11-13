@@ -23,4 +23,6 @@ bitscout_simple_config:
     foo:
       label: Fubar
       type: int
+      default: bar # optional, default null
+      show: true   # optional, default true
 ```

@@ -7,6 +7,8 @@ use Symfony\Component\DependencyInjection\EnvVarLoaderInterface;
 
 class SimpleConfigEnvVarLoader implements EnvVarLoaderInterface
 {
+    const PREFIX = 'SIMPLE_CONFIG';
+
     /**
      * @var array
      */
@@ -21,9 +23,16 @@ class SimpleConfigEnvVarLoader implements EnvVarLoaderInterface
      */
     public function loadEnvVars(): array
     {
-        dump('loading');
         dump($this->fields);
 
-        return ['FOO' => 'bar'];
+        $vars = [];
+
+        foreach ($this->fields as $fieldName => $field) {
+            $vars[sprintf('%s_%s', static::PREFIX, strtoupper($fieldName))] = $field[Configuration::FIELD_DEFAULT];
+        }
+
+        dump($vars);
+
+        return $vars;
     }
 }
