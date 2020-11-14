@@ -1,9 +1,12 @@
 <?php
 
-
 namespace Bitscout\SimpleConfig\Entity;
 
-
+/**
+ * Class SimpleConfigString
+ *
+ * @author Christian Kollross
+ */
 class SimpleConfigString extends AbstractSimpleConfig
 {
     /**

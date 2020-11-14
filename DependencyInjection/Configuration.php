@@ -5,6 +5,11 @@ namespace Bitscout\SimpleConfig\DependencyInjection;
 use Symfony\Component\Config\Definition\Builder\TreeBuilder;
 use Symfony\Component\Config\Definition\ConfigurationInterface;
 
+/**
+ * Class Configuration
+ *
+ * @author Christian Kollross
+ */
 class Configuration implements ConfigurationInterface
 {
     const FIELD_DEFAULT = 'default';

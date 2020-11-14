@@ -5,6 +5,11 @@ namespace Bitscout\SimpleConfig\DependencyInjection;
 
 use Symfony\Component\DependencyInjection\EnvVarLoaderInterface;
 
+/**
+ * Class SimpleConfigEnvVarLoader
+ *
+ * @author Christian Kollross
+ */
 class SimpleConfigEnvVarLoader implements EnvVarLoaderInterface
 {
     const PREFIX = 'SIMPLE_CONFIG';
