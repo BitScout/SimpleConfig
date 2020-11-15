@@ -6,7 +6,13 @@
     "license": "MIT",
     "authors": [
         {
-            "name": "Christian Kollross"
+            "name": "Christian Kollross",
+            "role": "Developer"
+        },
+        {
+            "name": "ekino",
+            "homepage": "https://github.com/ekino/EkinoDataProtectionBundle",
+            "role": "Template for building this bundle"
         }
     ],
     "require": {
