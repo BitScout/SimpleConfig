@@ -19,6 +19,6 @@ class SimpleConfigAdmin extends AbstractAdmin
     /**
      * @var string
      */
-    protected $baseRouteName = 'admin_app_simple_config';
+    protected $baseRouteName = 'admin_app_bitscout_simple_config';
 
 }
