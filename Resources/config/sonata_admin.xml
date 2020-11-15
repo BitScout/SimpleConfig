@@ -7,7 +7,7 @@
     <services>
         <service id="Bitscout\SimpleConfig\Admin\SimpleConfigAdmin">
             <argument />
-            <argument />
+            <argument>Bitscout\SimpleConfig\Entity\AbstractSimpleConfig</argument>
             <argument>Bitscout\SimpleConfig\Controller\SimpleConfigAdminController</argument>
             <tag name="sonata.admin" manager_type="orm" label="Logs" audit="false" />
         </service>

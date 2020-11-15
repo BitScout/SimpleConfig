@@ -30,6 +30,8 @@ bitscout_simple_config:
 This immediately will provide you with the environment variable `SIMPLE_CONFIG_FOO` 
 with the value `"bar"`.
 
+In your `sonata_admin.yaml`, add a menu entry to the route `admin_app_bitscout_simple_config_list`.
+
 ### Administration
 
 __TODO__
